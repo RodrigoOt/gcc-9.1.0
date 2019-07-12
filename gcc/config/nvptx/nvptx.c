@@ -5192,12 +5192,10 @@ nvptx_file_start (void)
 {
   fputs ("// BEGIN PREAMBLE\n", asm_out_file);
   fputs ("\t.version\t3.1\n", asm_out_file);
-  if (TARGET_SM20)
-    fputs ("\t.target\tsm_20\n", asm_out_file);
-  if (TARGET_SM30)
-    fputs ("\t.target\tsm_30\n", asm_out_file);
   if (TARGET_SM35)
     fputs ("\t.target\tsm_35\n", asm_out_file);
+  else
+    fputs ("\t.target\tsm_30\n", asm_out_file);
   fprintf (asm_out_file, "\t.address_size %d\n", GET_MODE_BITSIZE (Pmode));
   fputs ("// END PREAMBLE\n", asm_out_file);
 }

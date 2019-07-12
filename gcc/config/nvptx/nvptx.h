@@ -93,8 +93,6 @@
 #define Pmode (TARGET_ABI64 ? DImode : SImode)
 #define STACK_SIZE_MODE Pmode
 
-#define TARGET_SM20 (ptx_isa_option == PTX_ISA_SM20)
-#define TARGET_SM30 (ptx_isa_option == PTX_ISA_SM30)
 #define TARGET_SM35 (ptx_isa_option >= PTX_ISA_SM35)
 
 /* Registers.  Since ptx is a virtual target, we just define a few

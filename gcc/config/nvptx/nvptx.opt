@@ -54,9 +54,6 @@ Name(ptx_isa) Type(int)
 Known PTX ISA versions (for use with the -misa= option):
 
 EnumValue
-Enum(ptx_isa) String(sm_20) Value(PTX_ISA_SM20)
-
-EnumValue
 Enum(ptx_isa) String(sm_30) Value(PTX_ISA_SM30)
 
 EnumValue
